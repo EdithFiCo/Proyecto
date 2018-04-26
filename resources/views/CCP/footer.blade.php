@@ -3,65 +3,39 @@
               <!-- Footer links -->
               <div class="row text-center text-md-left mt-3 pb-3">
       
-                  <!--First column-->
-                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Sistema SIROPA</h6>
-                      <p class="text-white">Aqui puede llevar informacion acerca del sistema</p>
-                  </div>
+                  
                   <!--/.First column-->
       
-                  <hr class="w-100 clearfix d-md-none">
+                  
       
                   <!--Second column-->
-                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Actividades</h6>
-                      <p><a href="#!">Del estado</a></p>
-                      <!--p><a href="#!">MDWordPress</a></p>
-                      <p><a href="#!">BrandFlow</a></p-->
-                      <p><a href="#!">Regionales</a></p>
+                  <div class= "col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" >
+                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Secretaría de la Función Pública</h6>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Circuito Cerro del Gato # 1900</p>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Ciudad Administrativa</p>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Edificio D</p>
                   </div>
                   <!--/.Second column-->
       
-                  <hr class="w-100 clearfix d-md-none">
-      
-                  <!--Third column-->
-                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Links</h6>
-                      <p><a href="#!">Crea...</a></p>
-                      <p><a href="#!">Zacatecas</a></p>
-                      <!--p><a href="#!">Shipping Rates</a></p>
-                      <p><a href="#!">Help</a></p-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Tel.  (492) 491 5000</p>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Tel. (492) 925 6540</p>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Ext. 42100</p>
                   </div>
-                  <!--/.Third column-->
-      
-                  <hr class="w-100 clearfix d-md-none">
-      
-                  <!--Fourth column-->
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Contacto</h6>
-                      <!--p class="text-white"><i class="fa fa-home mr-3 "></i> Zacatecas</p-->
-                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> info@gmail.com</p>
-                      <p class="text-white"><i class="fa fa-phone mr-3 text-white"></i> + 01 234 567 88</p>
-                      <!--p class="text-white"><i class="fa fa-print mr-3 text-white"></i> + 01 234 567 89</p-->
+
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> C.P.98160</p>
+                      <p class="text-white"><i class="fa fa-envelope mr-3 text-white"></i> Zacatecas, Zacatecas</p>
+                      
                   </div>
                   <!--/.Fourth column-->
       
               </div>
               <!-- Footer links -->
       
-              <hr>
-      
-              <div class="row py-3 d-flex align-items-center">
-      
-                  <!--Grid column-->
-                  <div class="col-md-8 col-lg-8">
-      
-                      <!--Copyright-->
-                      <p class="text-center text-md-left grey-text text-white">© 2018 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MDBootstrap.com</strong></a></p>
-                      <!--/.Copyright-->
-      
-                  </div>
-                  <!--Grid column-->
+              
       
                   <!--Grid column-->
                   <div class="col-md-4 col-lg-4 ml-lg-0">

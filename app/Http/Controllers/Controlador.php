@@ -21,6 +21,11 @@ class Controlador extends Controller
     	return view('menu.atolinga');
     }
 
+    function florencia()
+    {
+        return view('menu.florencia');
+    }
+
     function momax()
     {
     	return view('menu.momax');
@@ -29,6 +34,11 @@ class Controlador extends Controller
     function santa_maria()
     {
     	return view('menu.santa_maria');
+    }
+
+    function tepechitlan()
+    {
+        return view('menu.tepechitlan');
     }
 
     function teul()
@@ -41,8 +51,19 @@ class Controlador extends Controller
     	return view('menu.tlaltenango');
     }
 
+    function garcia()
+    {
+        return view('menu.garcia');
+    }
+
     function funcion_publica()
     {
     	return view('menu.funcion_publica');
     }
+    function SIROPA()
+    {
+        return view('menu.siropa');
+    }
+
+
 }

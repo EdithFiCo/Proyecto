@@ -1,21 +1,7 @@
-<!doctype html>
-<html lang="es">
-  <head> 
-    <!-- Required meta tags -->
-    @include('CCP/head')
-  </head>
-  <body>
-    <header>
-      @include('CCP/header')
-    </header>
+@extends('layout.cont')
 
-  @section('content')
-      <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
-        <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
-        <div class="lh-100">
-          <h6 class="mb-0 text-white lh-100">Bootstrap</h6>
-        </div>
-      </div>
+@section('content')
+      
 
       <div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">ATOLINGA</h6>
@@ -58,12 +44,9 @@
         
       </div>
 
-  @stop
-
-  @yield('content')
-
-    <footer class="page-footer font-small bg-dark pt-4 mt-4">
+  <footer class="page-footer font-small bg-dark pt-4 mt-4">
       
                    @include('CCP/footer')
       
       </footer>
+@endsection

@@ -14,7 +14,7 @@ class ArchiUnoController extends Controller
     public function index()
     {
         //
-        return view('ArchivosUno.index');
+        return view('faseuno.index');
     }
 
     /**

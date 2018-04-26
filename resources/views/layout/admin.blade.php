@@ -13,6 +13,7 @@
 
     
 
+   
     <!-- Bootstrap Core CSS -->
     <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
     {!!Html::style('AdminStyle/bootstrap/css/bootstrap.min.css')!!}
@@ -35,6 +36,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    {!!Html::style('AdminStyle/dist/css/jquery-confirm.min.css')!!}
+
+
 
 </head>
 
@@ -51,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}">Admin Siropa Dashboard</a>
+                <a class="navbar-brand" href="index.html">Admin Siropa Dashboard</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -98,10 +102,10 @@
                             <a href="#"><i class="fa fa-users fa-fw"></i> Usuarios<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/usuario/create" class="fa fa-plus fa-fw">Agregar</a>
+                                    <a href="{{ route('usuario.create') }}" class="fa fa-plus fa-fw">Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="/usuario" class="fa fa-list fa-fw">Lista</a>
+                                    <a href="{{ url('/usuario') }}" class="fa fa-list fa-fw">Lista</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -110,10 +114,10 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Proyectos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#" class="fa fa-plus fa-fw">Agregar</a>
+                                    <a href="{{ route('proyecto.create') }}" class="fa fa-plus fa-fw">Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="fa fa-list fa-fw">Lista</a>
+                                    <a href="{{ url('/proyecto') }}" class="fa fa-list fa-fw">Lista</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -122,10 +126,22 @@
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Adquisiciones<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#" class="fa fa-plus fa-fw">Agregar</a>
+                                    <a href="{{route('adquisicion.create')}}" class="fa fa-plus fa-fw">Agregar</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="fa fa-list fa-fw">Lista</a>
+                                    <a href="{{ url('/adquisicion') }}" class="fa fa-list fa-fw">Lista</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Municipios<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{ route('municipio.create') }}" class="fa fa-plus fa-fw">Agregar</a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('/municipio') }}" class="fa fa-list fa-fw">Lista</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -144,7 +160,6 @@
 
     </div>
     <!-- /#wrapper -->
-
     <!-- jQuery -->
     <!--<script src="jquery/jquery.min.js"></script>-->
     {!!Html::script('AdminStyle/jquery/jquery.min.js')!!}
@@ -160,7 +175,17 @@
     <!-- Custom Theme JavaScript -->
     <!--<script src="js/sb-admin-2.js"></script>-->
     {!!Html::script('AdminStyle/js/sb-admin-2.js')!!}
+    <!--Personal script/js-->
+    {!!Html::script('AdminStyle/js/jquery-confirm.min.js')!!}
 
 </body>
 
+    
+</body>
+
 </html>
+
+presidente
+secretario
+tesorero
+vocal de control y vigilancia

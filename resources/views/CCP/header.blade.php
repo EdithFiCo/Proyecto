@@ -26,25 +26,28 @@
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?">Administrador</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/admin') }}">Administrador </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Contactos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url('/atolinga') }} ">Atolinga</a>
-              <a class="dropdown-item" href="{{ url('/momax') }}">Momax</a>
+              <a class="dropdown-item" href="{{ url('/ato') }} ">Atolinga</a>
+              <a class="dropdown-item" href="{{ url('/florencia') }} ">Florencia</a>
+              <a class="dropdown-item" href="{{ url('/mmx') }}">Momax</a>
               <a class="dropdown-item" href="{{ url('/santa_maria') }}">Santa María</a>
+              <a class="dropdown-item" href="{{ url('/tepechitlan') }}">Tepechitlán</a>
               <a class="dropdown-item" href="{{ url('/teul') }}">Teúl de González Ortega</a>
-              <a class="dropdown-item" href="{{ url('tlaltenango') }}">Tlaltenango de Sánchez Román</a>
+              <a class="dropdown-item" href="{{ url('/tgo') }}">Tlaltenango de Sánchez Román</a>
+              <a class="dropdown-item" href="{{ url('/garcia') }}">García de la Cadena</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ url('/funcion_publica') }}">Función Pública</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
+            <a class="nav-link" href="{{ url('/primera') }} ">Acerca de</a>
           </li>
 
           

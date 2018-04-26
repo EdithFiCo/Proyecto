@@ -11,10 +11,13 @@
 
 @section('content')
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-sm-4 col-lg-12" ></div>
-        <div class="col-md-4 col-sm-4 col-lg-12">
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-lg-12" ></div>
+    <div class="col-md-4 col-sm-4 col-lg-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
           <!--form start-->
           <form class="form-container">
             <!--<h1>Registro de Usuarios</h1>-->
@@ -33,17 +36,17 @@
               </thead>
               @foreach($users as $user)
               <tbody>
-                  <td>{{$user->nombre}}</td>
-                  <td>{{$user->clave_fun}}</td>
-                  <td>{{$user->email}}</td>
-                  <td>{{$user->telefono}}</td>
-                  <td>{{$user->direccion}}</td>
-                  <td>{{$user->municipio}}</td>
-                  <td>
-                    <!--<a class="btn btn-primary btn-sm" >Editar</a>-->
-                    <!--<button class="btn btn-danger btn-sm">Eliminar</button>-->
-                    {!!link_to_route('usuario.edit', $title='Editar', $parameters = $user -> id, $attributes=['class'=>'btn btn-primary'])!!}
-                  </td>
+                <td>{{$user->nombre}}</td>
+                <td>{{$user->clave_fun}}</td>
+                <td>{{$user->email}}</td>
+                <td>{{$user->telefono}}</td>
+                <td>{{$user->direccion}}</td>
+                <td>{{$user->municipio}}</td>
+                <td>
+                  <!--<a class="btn btn-primary btn-sm" >Editar</a>-->
+                  <!--<button class="btn btn-danger btn-sm">Eliminar</button>-->
+                  {!!link_to_route('usuario.edit', $title='Editar', $parameters = $user -> id, $attributes=['class'=>'btn btn-primary'])!!}
+                </td>
               </tbody>
               @endforeach
             </table>
@@ -51,8 +54,9 @@
           </form>
           <!--form end-->
         </div>
-       </div>
       </div>
     </div>
+  </div>
+</div>
 
 @endsection

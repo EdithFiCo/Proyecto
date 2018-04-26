@@ -10,8 +10,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Estilos/css/bootstrap.min.css" >
-    <!--Estilos personalizados -->
-    <link rel="stylesheet" href="Estilos/css/estilos.min.css" >
 
     <link rel="stylesheet" type="Estilos/text/css" href="css/bootstrap.css">
 
@@ -23,10 +21,6 @@
    
 
     {!!Html::style('Estilos/css/bootstrap.min.css')!!}
-
-    <!-- MetisMenu CSS -->
-    <!--<link href="metisMenu/metisMenu.min.css" rel="stylesheet">-->
-    {!!Html::style('Estilos/css/estilos.min.css')!!}
 
     <!-- Custom CSS -->
     <!--<link href="dist/css/sb-admin-2.css" rel="stylesheet">-->
@@ -53,7 +47,8 @@
       </section>
      
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,25 +59,31 @@
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?">Administrador</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/admin') }}">Administrador </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/significado') }}">¿Qué es SIROPA? </a>
+          </li>
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Contactos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url('/atolinga') }} ">Atolinga</a>
-              <a class="dropdown-item" href="{{ url('/momax') }}">Momax</a>
+              <a class="dropdown-item" href="{{ url('/ato') }} ">Atolinga</a>
+              <a class="dropdown-item" href="{{ url('/florencia') }} ">Florencia</a>
+              <a class="dropdown-item" href="{{ url('/mmx') }}">Momax</a>
               <a class="dropdown-item" href="{{ url('/santa_maria') }}">Santa María</a>
+              <a class="dropdown-item" href="{{ url('/tepechitlan') }}">Tepechitlán</a>
               <a class="dropdown-item" href="{{ url('/teul') }}">Teúl de González Ortega</a>
-              <a class="dropdown-item" href="{{ url('tlaltenango') }}">Tlaltenango de Sánchez Román</a>
+              <a class="dropdown-item" href="{{ url('/tgo') }}">Tlaltenango de Sánchez Román</a>
+              <a class="dropdown-item" href="{{ url('/garcia') }}">García de la Cadena</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ url('/funcion_publica') }}">Función Pública</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/primera') }} ">Acerca de</a>
           </li>
 
           
@@ -92,6 +93,7 @@
           <INPUT TYPE=text id="s" name="q"  value="" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar" />
 
           <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+          <!--button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button-->
         </form>
       </div>
     </nav>
@@ -103,9 +105,7 @@
 
     </div>
     <!-- /#wrapper -->
-
-    
-  {!! Html::script("Estilos/js/bootstrap.js") !!}
+    {!! Html::script("Estilos/js/bootstrap.js") !!}
 
 
 
@@ -113,15 +113,14 @@
     <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
     {!!Html::script('Estilos/js/bootstrap.min.js')!!}
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <!--<script src="metisMenu/metisMenu.min.js"></script>-->
-    {!!Html::script('Estilos/metisMenu/metisMenu.min.js')!!}
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js" ></script>
     <script src="Estilos/js/bootstrap.js" ></script>
+
+    
+  
 </body>
 
 </html>
